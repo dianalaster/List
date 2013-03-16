@@ -1,0 +1,38 @@
+
+  <div class="header">
+    <div class="inner-header">
+      <h1>This List is Awesome</h1>
+      <h2>Why would you want any other List?</h2>
+    </div>
+  </div>
+
+  <div class="form"><!--start form-->
+    <div class="inner-form">
+      <h2>Link:</h2>
+      <input class="URL"></input>
+      <h2>Description:</h2>
+      <input class="description"></input>
+      <div class="wrapper">
+          <button class="savebutton">Save!</button>
+      </div>
+    </div>
+  </div><!--end of form-->
+
+  <div class="list-holder"><!--start list holder-->
+
+  <% @infos.each do |info| %>
+    <div class="item">
+      <div class="inner-item">
+        <h3>Here's the link:</h3>
+        <p><a href="<%= info.url %>" target="_blank"><%= info.url %></a></p>
+        <h3>Here's the description:</h3>
+        <p><%= info.description %></p>
+      </div>
+    </div>
+  <% end %> <!--end of 1st item-->
+
+  </div><!--end of list holder-->
+
+
+
+<%= link_to 'New Info', new_info_path %>
