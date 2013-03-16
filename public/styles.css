@@ -1,0 +1,143 @@
+
+
+.header h1 {
+	font-family: helvetica;
+	color: #919191;
+}
+
+.header h2 {
+	font-family: helvetica;
+	color: #919191;
+}
+
+.inner-form h2 {
+	font-family: helvetica;
+	color: #919191;
+	padding-left: 10px;
+	margin: 5px;
+}
+
+.inner-item h3 {
+	font-family: helvetica;
+	color: #919191;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.inner-item p {
+	color: #00A0D1;
+}
+
+div.header {
+	font-family: helvetica;
+	background-color: #D2D2D2;
+	border: 10px solid #D2D2D2;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+	margin-left: 120px;
+	margin-right: 120px; 
+}
+
+div.inner-header {
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	padding: 3px;
+}
+
+div.form {
+	font-family: helvetica;
+	background-color: #D2D2D2;
+	border: 5px solid #D0D0D0;
+	padding: 5px;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+div.inner-form {
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+input {
+	font-family: helvetica;
+	border: 5px solid #D0D0D0;
+	background-color: #D2D2D2;
+	display: block;
+	width: 97%;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+input.URL {
+	font-size: 20px;
+	color: #00A0D1;
+}
+
+a {
+
+	color:#00A0D1
+	text.bold;
+}      /* unvisited link */
+a:visited {color:#00A0D1;}  /* visited link */
+a:hover {
+	color:#D2D2D2;
+}  /* mouse over link */
+a:active {color:#D2D2D2;}  /* selected link */
+
+
+input.description {
+	color: #00A0D1;
+	font-size: 16px;
+}
+
+
+div.list-holder {
+	font-family: helvetica;
+	background-color: #00A0D1;
+	border: 5px solid #D0D0D0;
+	padding: 5px;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+div.item {
+	font-family: helvetica;
+	background-color: #D2D2D2;
+	padding: 5px;
+	border-radius: 10px;
+	margin: 10px;
+	text-indent: 10px;
+	color: #C453EE;
+	font-size: 20px;
+}
+
+div.inner-item {
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+button {
+	background-color: #00A0D1;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #EBEBEB;
+}
+
+div.wrapper {
+    text-align: right;
+	width: 87%;
+}
+
+
+body {
+
+	background-color: #E6E6E6;
+}
+
+
+
+
+
