@@ -2,34 +2,20 @@ class InfosController < ApplicationController
   # GET /infos
   # GET /infos.json
   def index
-    @infos = Info.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render :json => @infos }
-    end
+    @infos = Info.order("created_at DESC").all
+    @info = Info.new
   end
 
   # GET /infos/1
   # GET /infos/1.json
   def show
     @info = Info.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render :json => @info }
-    end
   end
 
   # GET /infos/new
   # GET /infos/new.json
   def new
     @info = Info.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render :json => @info }
-    end
   end
 
   # GET /infos/1/edit
@@ -42,14 +28,10 @@ class InfosController < ApplicationController
   def create
     @info = Info.new(params[:info])
 
-    respond_to do |format|
-      if @info.save
-        format.html { redirect_to @info, :notice => 'Info was successfully created.' }
-        format.json { render :json => @info, :status => :created, :location => @info }
-      else
-        format.html { render :action => "new" }
-        format.json { render :json => @info.errors, :status => :unprocessable_entity }
-      end
+    if @info.save
+      redirect_to :action => 'index'
+    else
+      render :action => "new"
     end
   end
 

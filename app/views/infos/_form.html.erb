@@ -1,25 +1,14 @@
-<%= form_for(@info) do |f| %>
-  <% if @info.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@info.errors.count, "error") %> prohibited this info from being saved:</h2>
+<div class="form">
+  <div class="inner-form">
+    <%= form_for(@info) do |f| %>
+      <h2>Link:</h2>
+      <%= f.text_field :url, :class =>"URL" %>
+      <h2>Description:</h2>
+      <%= f.text_field :description, :class =>"URL" %>
+      <div class="wrapper">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>
 
-      <ul>
-      <% @info.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :url %><br />
-    <%= f.text_field :url %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
